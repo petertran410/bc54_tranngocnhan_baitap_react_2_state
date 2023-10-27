@@ -1,10 +1,10 @@
 import './App.css';
-import Glass from './Glass/Glass';
+import GlassState from './GlassState/GlassState';
 
 function App() {
   return (
     <div>
-      <Glass />      
+      <GlassState />      
     </div>
   );
 }
