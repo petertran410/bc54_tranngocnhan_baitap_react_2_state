@@ -21,13 +21,13 @@ export default class Glass extends Component {
         <div className="background">
           <Model />
 
-          {/* <Item detail={this.state.dataGlassesSelected} /> */}
+          <Item detail={this.state.dataGlassesSelected} />
         </div>
 
-        {/* <List
+        <List
           handleChangeGlass={this.handleChangeGlass}
           glassList={this.state.dataGlasses}
-        /> */}
+        />
       </div>
     );
   }

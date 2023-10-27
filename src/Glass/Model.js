@@ -9,7 +9,6 @@ export default class Model extends Component {
           <div className="row mt-5">
             <div className="col-6 text-center">
               <div className="img">
-                
               </div>
             </div>
           </div>

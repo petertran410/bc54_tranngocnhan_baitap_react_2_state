@@ -3,7 +3,7 @@ import Glass from './Glass/Glass';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Glass />      
     </div>
   );
