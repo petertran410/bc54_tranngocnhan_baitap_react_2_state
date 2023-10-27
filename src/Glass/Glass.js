@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { dataGlasses } from "../Data/data";
 import List from "./List";
 import Item from "./Item";
+import "./Glass.scss";
+import Model from "./Model";
 
 export default class Glass extends Component {
   state = {
@@ -16,11 +18,16 @@ export default class Glass extends Component {
   render() {
     return (
       <div>
-        <List
+        <div className="background">
+          <Model />
+
+          {/* <Item detail={this.state.dataGlassesSelected} /> */}
+        </div>
+
+        {/* <List
           handleChangeGlass={this.handleChangeGlass}
           glassList={this.state.dataGlasses}
-        />
-        <Item detal={this.state.dataGlassesSelected} />
+        /> */}
       </div>
     );
   }

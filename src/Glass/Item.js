@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class Item extends Component {
   render() {
-    let { name, desc } = this.props.items;
+    let { name, desc } = this.props.detail;
 
     return (
       <div>
