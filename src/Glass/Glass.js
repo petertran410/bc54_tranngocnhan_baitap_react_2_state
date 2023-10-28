@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { glassArr } from "../Data/data";
 import "./Glass.scss";
+import Content from "../Content/Content";
 
 export default class Glass extends Component {
   state = {
@@ -32,8 +33,19 @@ export default class Glass extends Component {
                   alt="Glass"
                 />
                 <div className="glasses">
-                  <img src={this.state.glassSelected ? this.state.glassSelected.url : ""} alt="Glass" />
+                  <img
+                    src={
+                      this.state.glassSelected
+                        ? this.state.glassSelected.url
+                        : ""
+                    }
+                    alt="Glass"
+                  />
                 </div>
+                <Content
+                  title={this.state.glassTitle}
+                  content={this.state.glassContent}
+                />
               </div>
             </div>
           </div>
