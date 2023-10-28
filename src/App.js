@@ -1,10 +1,18 @@
-import './App.css';
-import GlassState from './GlassState/GlassState';
+import "./App.css";
+import Glass from "./Glass/Glass";
+import Title from "./Title/Title";
+// import GlassState from './GlassState/GlassState';
 
 function App() {
   return (
     <div>
-      <GlassState />      
+      <div className="background">
+        <div className="overlay">
+          <Title />
+          <Glass />
+        </div>
+      </div>
+      {/* <GlassState />       */}
     </div>
   );
 }
