@@ -1,7 +1,6 @@
 import "./App.css";
 import Glass from "./Glass/Glass";
 import Title from "./Title/Title";
-// import GlassState from './GlassState/GlassState';
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
           <Glass />
         </div>
       </div>
-      {/* <GlassState />       */}
     </div>
   );
 }

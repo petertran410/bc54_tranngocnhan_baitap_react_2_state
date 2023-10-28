@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import { glassArr } from "../Data/data";
 import "./Glass.scss";
 import Content from "../Content/Content";
+import List from "../GlassSelection/List";
 
 export default class Glass extends Component {
   state = {
+    glassArr: glassArr,
     glassSelected: glassArr[0],
     glassModelImage: "./glassesImage/model.jpg",
     glassTitle: glassArr[0].name,
@@ -32,7 +34,7 @@ export default class Glass extends Component {
                   src={this.state.glassModelImage}
                   alt="Glass"
                 />
-                <div className="glasses">
+                <div className="glasses_1">
                   <img
                     src={
                       this.state.glassSelected
@@ -48,7 +50,18 @@ export default class Glass extends Component {
                 />
               </div>
             </div>
+            <div className="col-6 text-center">
+              <img
+                className="w-50"
+                src={this.state.glassModelImage}
+                alt="model"
+              />
+            </div>
           </div>
+          <List
+            selectedGlass={this.selectedGlass}
+            glassArr={this.state.glassArr}
+          />
         </div>
       </div>
     );
